@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Hello, from Angel Nicole Rojas!</h1>
+    <h3> Your First PHP Program</h3>
+    <?php
+        echo "Hello, World!";
+        ?>
+        <br>
+     <?php
+        $x = 15;
+        $y = 3;
+        $sum = $x + $y;
+
+        echo "The sum is $sum.";
+        ?>
+        <br>
+        <?php
+        $x = 15;
+        $y = 3;
+        $dif = $x - $y;
+
+        echo "The difference is $dif.";
+        ?>
+        <br>
+        <?php
+        $x = 15;
+        $y = 3;
+        $prod = $x * $y;
+
+        echo "The product is $prod.";
+        ?>
+        <br>
+        <?php
+        $x = 15;
+        $y = 3;
+        $quot = $x / $y;
+
+        echo "The quotient is $quot.";
+        ?>
+        <br>
+        <?php
+        if ($x % $y == 0) {
+            echo "$y is a factor of $x.";
+        } else {
+            echo "$x is not a factor of $y.";
+        }
+        ?>
+        <br>
+        <?php
+        echo "Numbers between 1 and 100 that are multiples of 3 divisible by 3 or 5: <br>";
+        for ($i = 1; $i <= 100; $i++) {
+            if ($i % 3 == 0 || $i % 5 == 0) {
+                echo "$i ";
+            }
+        }
+        ?>
+        <br>
+        <?php
+        $products = array("Product A, Product B, Product C");
+        echo $products[0];
+        ?>
+
+        <?php
+        $products = array("Product A", "Product B", "Product C");
+        $products[1] = "Product D";
+        var_dump($products);
+        ?>
+
+        <?php
+        $products = array("Product A", "Product B", "Product C");
+        foreach($products as $p){
+            echo $p . "<br>";
+        }
+        ?>
+        <?php
+        $products = array("name" => "Product A", "price" => 10.50, "stock" => 12);
+        echo $products["name"];
+        ?> 
+        <br>
+        <?php
+        $products = array(
+            array("name" => "Product A", "price" => 10.50, "stock" => 12),
+            array("name" => "Product B", "price" => 5.60, "stock" => 7),
+            array("name" => "Product C", "price" => 7.00, "stock" => 5)
+        );
+        foreach($products as $p){
+            echo $p["name"] . " is " . $p["price"] . " pesos <br>";
+        }
+        ?>
+
+</body>
+</html>
